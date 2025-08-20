@@ -166,7 +166,7 @@
       <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results"/>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HoldingsRequestDefaults">
-        <stringProp name="HTTPSampler.domain">apha-integration-bridge.api.dev.cdp-int.defra.cloud</stringProp>
+        <stringProp name="HTTPSampler.domain">apha-integration-bridge.api.${__P(env)}.cdp-int.defra.cloud</stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
           <collectionProp name="Arguments.arguments"/>
