@@ -192,7 +192,7 @@
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Token">
-          <stringProp name="HTTPSampler.domain">apha-integration-bridge-c63f2.auth.eu-west-2.amazoncognito.com</stringProp>
+          <stringProp name="HTTPSampler.domain">apha-integration-bridge-${__P(env)}.auth.eu-west-2.amazoncognito.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">oauth2/token</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
